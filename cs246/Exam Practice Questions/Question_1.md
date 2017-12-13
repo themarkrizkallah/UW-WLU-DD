@@ -34,6 +34,7 @@ if (stmt.first == A_2)
 You are asked to re-organize the logic so that object-oriented design is followed.
 
 #### Answer
+Visitor pattern.
 
 ***
 
@@ -41,23 +42,27 @@ You are asked to re-organize the logic so that object-oriented design is followe
 You are a developer at a game studio. You are asked to implement the graphics of a new game so that user can choose to render the graphics using DirectX or OpenGL without recompilation.
 
 #### Answer
+Bridge pattern
 
 ***
 #### Part (c)
 You are designing a new Graphical User Interface (GUI) framework. Every user interaction is considered as a “event” in the program. When an event is triggered the appropriate “event listeners” is notified and performs some action.
 
 #### Answer
+Observer
 
 ***
 #### Part (d)
 You are writing a PDF annotation app. How would you implement the annotations (e.g. text, highlighting and drawings) on the PDF?
 
 #### Answer
+Decorator pattern
 
 ***
 #### Part (e)
 Recall the AbstractIterator Example where all iterators inherit an abstrct class AbstractIterator. We want to have some unified interface to produce an iterator without losing the runtime type of iterators for different containers (this means we need an unified interface for all containers as well).
 
 #### Answer
+Template Method pattern
 
 ***
