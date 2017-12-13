@@ -4,10 +4,12 @@ Implement `foldl` and `foldr` in C++.
 Here is the description of those functions in How To Design Programs, serving as a re-fresher:
 
 ```
-;;foldr:(XY -> Y)Y(listofX) -> Y
-;; (foldr f base (list x-1 ... x-n)) = (f x-1 ... (f x-n base)) (define (foldr f base alox) ...)
-;;foldl:(XY -> Y)Y(listofX) -> Y
-;; (foldl f base (list x-1 ... x-n)) = (f x-n ... (f x-1 base)) (define (foldl f base alox) ...)
+;;foldr:(X Y -> Y) Y (listof X) -> Y
+;; (foldr f base (list x-1 ... x-n)) = (f x-1 ... (f x-n base)) 
+(define (foldr f base alox) ...)
+;;foldl:(X Y -> Y) Y (listof X) -> Y
+;; (foldl f base (list x-1 ... x-n)) = (f x-n ... (f x-1 base)) 
+(define (foldl f base alox) ...)
 ```
 The parameters of those functions in C++ should be the same, except the last parameter: instead of passing a list to the fucntions, you are to pass two iterators to the function, which are beginning and end of the iteration.
 
