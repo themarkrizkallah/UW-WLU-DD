@@ -1,4 +1,4 @@
-# CS 246 lecture 6
+# CS 246 Lecture 6
 
 ## Overloading << and >>
 

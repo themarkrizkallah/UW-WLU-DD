@@ -1,1 +1,5 @@
-.DS_Store
+*.DS_Store
+
+cs240
+
+cs246/.DS_Store

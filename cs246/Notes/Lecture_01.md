@@ -1,4 +1,4 @@
-# CS 246 lecture 1
+# CS 246 Lecture 1
 
 ### Variables
 

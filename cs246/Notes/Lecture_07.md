@@ -1,4 +1,4 @@
-# CS 246 lecture 7
+# CS 246 Lecture 7
 
 Recall:
 
