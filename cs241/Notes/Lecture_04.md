@@ -51,16 +51,16 @@ f returns
 ### Template for procedures:
 ```
 f:
-    sw $2, -4($30) ; push regs f will modify onto stack
+    sw $2, -4($30)   ; push regs f will modify onto stack
     sw $3, -8($30)
-    lis $3 ; decrement $30
+    lis $3           ; decrement $30
     .word 8
     sub $30, $30, $3
     ; body of f here, can manipulate $2 and $3
     add $30, $30, $3 ; increment $30
-    lw $30, -8($30) ; load regs
+    lw $3, -8($30)   ; load regs
     lw $2, -4($30)
-    __________ ; return 
+    __________       ; return 
 ```
 1. What about call and return?
 
@@ -89,23 +89,23 @@ f: ... // f = address of this line in memory
 main: 
     lis $5
     .word f
-    sw $31, -4($30) ; push $31 onto stack
-    lis $31 ; decrement stack pointer $30
+    sw $31, -4($30)   ; push $31 onto stack
+    lis $31           ; decrement stack pointer $30
     .word -4
     add $30, $30, $31
-    jalr $5 ; call f
-    lis $31 ; increment stack pointer
+    jalr $5           ; call f
+    lis $31           ; increment stack pointer
     .word 4
     add $30, $30, $31
     lw $31, -4($30)
     ...
     jr $31 // return to loader
 
-f: ... ; push registers f will use onto stack
-       ; decrement $30
-       ; body of f
-       ; increment $30
-       ; pop the registers off the stack
+f: ...     ; push registers f will use onto stack
+           ; decrement $30
+           ; body of f
+           ; increment $30
+           ; pop the registers off the stack
     $jr 31 ; return to caller
 ```
 
@@ -149,7 +149,7 @@ topOfLoop:
 
  **I/O**: 
  - Output: `sw` to 0xffff000c
-    - Least-sig *byte* will be printer
+    - Least-sig *byte* will be printed
 - Input: `lw` from 0xffff0004
     - Next char from stdin will be least-sig byte
 
